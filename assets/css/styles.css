@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(28, 28, 31);
+}
+
+a {
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fz-16 {
+    font-size: 16;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.fz24 {
+    font-size: 24px;
+}
+
+.container {
+    max-width: 1120px;
+}
+
+.container-high {
+    min-height: 769px;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img {
+    max-height: 50px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul > li {
+    padding: 15px
+}
+
+header nav ul li ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 10;
+    background-color: rgb(28, 28, 31);
+    border: 1px solid white;
+    right: 0;
+    top: 50px;
+}
+
+header nav ul li:hover ul {
+    display: flex;
+}
+
+header nav ul li ul li {
+    position: relative;
+    margin: 2px;
+}
+
+footer {
+    margin: 0 auto;
+    padding-top: 10px;
+    border-top: 1px solid rgb(110, 110, 110);
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+footer .leftside {
+    width: 330px;
+    display: flex;
+    align-items: center;
+}
+
+footer .middle img {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+footer .rightside {
+    width: 330px;
+}
+
+footer span {
+    color: rgb(110, 110, 110);
+}
+
+footer svg {
+    position: relative;
+    top: 7px;
+}

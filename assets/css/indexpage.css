@@ -1,0 +1,331 @@
+.slider {
+    height: 600px;
+    overflow: hidden;
+    border: 1px solid white;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.slider .navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slider .bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: white;
+    opacity: .7;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.slider .bar:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+input[name = "r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slider .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slider .slides .slide {
+    width: 25%;
+    transition: all .6 ease;
+}
+
+.slider .slides .slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0%;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -75%;
+}
+
+.adv-date, .adv-author {
+    color: rgb(145, 143, 143);
+}
+
+.adv-description {
+    margin: 3px 0;
+    font-size: 12px;
+}
+
+.adv-hor-slash {
+    color: brown;
+    font-weight: 900;
+}
+
+.adv-vert-slash {
+    color: white;
+}
+
+.advertisments {
+    margin: 20px auto 0;
+}
+
+.advertisments .advertisments-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.advertisments .advertisments-header .adv-big {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.advertisments .advertisments-header .adv-big h2 {
+    margin: 7px 0 0;
+}
+
+.advertisments .advertisments-header .adv-side {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+}
+
+.advertisments .advertisments-header .adv-side .adv-small {
+    display: flex;
+    flex-direction: column;
+}
+
+.advertisments .advertisments-header .adv-side .adv-small:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.advertisments .advertisments-header .adv-side .adv-small img {
+    width: 100%;
+}
+
+.advertisments .advertisments-header .adv-side .adv-small h4 {
+    margin: 5px 0 0;
+}
+
+.advertisments .adv {
+    display: flex;
+    margin: 20px 0;
+}
+
+.advertisments .adv img {
+    width: 400px;;
+}
+
+.advertisments .adv .adv-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.advertisments .adv .adv-right .adv-right-text p {
+    margin: 10px 0;
+}
+
+.advertisments .advert {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.manage-posts, .add-post {
+    margin: 0 auto 0;
+}
+
+.manage-posts .button-add {
+    background-color: green;
+    color: white;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.manage-posts button:hover, .button-manage:hover{
+    transform: translateX(10px);
+    transition-duration: 2s;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.manage-posts .row {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+}
+
+.manage-posts .row-first {
+    font-size: 20px;
+}
+
+.manage-posts .row .row-id {
+    width: 10%;
+    font-weight: 700;
+ }
+
+.manage-posts .row .row-name {
+    width: 50%;
+}
+
+.manage-posts .row .row-manage {
+    width: 40%;
+}
+
+.manage-posts .row .row-edit {
+    width: 20%;
+}
+
+.manage-posts .row .row-edit a {
+    color: rgb(152, 152, 255);
+}
+
+.manage-posts .row .row-del {
+    width: 20%;
+}
+
+.manage-posts .row .row-del a {
+    color: rgb(255, 154, 154);
+}
+
+.button-manage {
+    background-color: rgb(13, 0, 128);
+    color: white;
+    width: 220px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.form-add-post {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-add-post .post-title {
+    width: 100%;
+    height: 30px;
+    color: black;
+    background-color: rgb(221, 221, 221);
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.form-add-post .post-content {
+    width: 100%;
+    height: 400px;
+    color: black;
+    background-color: rgb(221, 221, 221);
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 8px 0 20px;
+    padding: 5px;
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file-text {
+	padding: 0 10px;
+	line-height: 40px;
+	text-align: left;
+	height: 40px;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	width: 80%;
+	border-radius: 6px 0px 0 6px;
+	border: 1px solid #ddd;
+}
+
+.input-file-btn {
+position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 0 4px 4px 0;
+	background-color: #419152;
+	line-height: 22px;
+	height: 40px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+    width: 20%;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+.input-file input[type=file]:focus + .input-file-btn {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+.input-file:hover .input-file-btn {
+	background-color: #59be6e;
+}
+.input-file:active .input-file-btn {
+	background-color: #2E703A;
+}
+ 
+.input-file input[type=file]:disabled + .input-file-btn {
+	background-color: #eee;
+}
+
+.submit-btn {
+    width: 22%;
+    height: 40px;
+    background-color: #2E703A;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 20px auto;
+    font-size: 24px;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #59be6e;
+}

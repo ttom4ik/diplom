@@ -1,0 +1,138 @@
+.manage-subjects {
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.manage-subjects h1 {
+    margin-bottom: 15px;
+}
+
+.manage-subjects p {
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(104, 104, 104);
+}
+
+.subj {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.manage-posts .row .row-date {
+    width: 15%;
+}
+
+.manage-posts .row .row-mark {
+    width: 10%;
+}
+
+.manage-posts .row .row-description {
+    width: 55%;
+}
+
+.manage-posts .row .row-delete {
+    width: 20%;
+}
+
+.manage-posts .row .row-delete a {
+    color: rgb(255, 154, 154);
+}
+
+.manage-posts .row .row-add {
+    width: 20%;
+}
+
+.manage-posts form {
+    width: 100%;
+}
+
+.marks-flex {
+    display: flex;
+    width: 100%;
+}
+
+.form-add-post .post-title {
+    width: 80%;
+    height: 30px;
+    color: white;
+    background-color: rgb(28, 28, 31);
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.submit-mark-btn {
+    width: 80%;
+    height: 40px;
+    background-color: #2E703A;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 20px auto;
+    font-size: 24px;
+    transition: background-color 0.2s;
+}
+
+.submit-mark-btn:hover {
+    background-color: #59be6e;
+}
+
+
+.manage-posts, .add-post {
+    margin: 0 auto 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.manage-posts .row {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+}
+
+.manage-posts .row-first {
+    font-size: 20px;
+}
+
+.form-add-post {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form-add-post .post-content {
+    width: 100%;
+    height: 400px;
+    color: black;
+    background-color: rgb(221, 221, 221);
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 8px 0 20px;
+    padding: 5px;
+}
+
+.submit-btn {
+    width: 22%;
+    height: 40px;
+    background-color: #2E703A;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 20px auto;
+    font-size: 24px;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #59be6e;
+}

@@ -1,0 +1,150 @@
+.slider {
+    height: 600px;
+    overflow: hidden;
+    border: 1px solid white;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.slider .navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slider .bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: white;
+    opacity: .7;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.slider .bar:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+input[name = "r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slider .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slider .slides .slide {
+    width: 25%;
+    transition: all .6 ease;
+}
+
+.slider .slides .slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0%;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -75%;
+}
+
+.adv-date, .adv-author {
+    color: rgb(145, 143, 143);
+}
+
+.adv-description {
+    margin: 3px 0;
+    font-size: 12px;
+}
+
+.adv-hor-slash {
+    color: brown;
+    font-weight: 900;
+}
+
+.adv-vert-slash {
+    color: white;
+}
+
+.advertisments {
+    margin: 20px auto 0;
+}
+
+.advertisments .advertisments-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.advertisments .advertisments-header .adv-big {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.advertisments .advertisments-header .adv-big h2 {
+    margin: 7px 0 0;
+}
+
+.advertisments .advertisments-header .adv-side {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+}
+
+.advertisments .advertisments-header .adv-side .adv-small {
+    display: flex;
+    flex-direction: column;
+}
+
+.advertisments .advertisments-header .adv-side .adv-small:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.advertisments .advertisments-header .adv-side .adv-small img {
+    width: 100%;
+}
+
+.advertisments .advertisments-header .adv-side .adv-small h4 {
+    margin: 5px 0 0;
+}
+
+.advertisments .adv {
+    display: flex;
+    margin: 20px 0;
+}
+
+.advertisments .adv img {
+    width: 400px;;
+}
+
+.advertisments .adv .adv-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.advertisments .adv .adv-right .adv-right-text p {
+    margin: 10px 0;
+}
+
